@@ -1,0 +1,40 @@
+String radar is a palindrome.
+Its first character is r.
+It is of length 5.
+It has 0 uppercase letters.
+It has 5 lowercase letters.
+
+String leVel is a palindrome.
+Its first character is l.
+It is of length 5.
+It has 1 uppercase letters.
+It has 4 lowercase letters.
+
+String CompUtER is not a palindrome.
+Its first character is C.
+It is of length 8.
+It has 4 uppercase letters.
+It has 4 lowercase letters.
+
+String Science is not a palindrome.
+Its first character is S.
+It is of length 7.
+It has 1 uppercase letters.
+It has 6 lowercase letters.
+
+String theORY is not a palindrome.
+Its first character is t.
+It is of length 6.
+It has 3 uppercase letters.
+It has 3 lowercase letters.
+
+String 100 is a number.
+It is an integer.
+
+String string is not a number.
+
+String 98.56 is a number.
+It is a real number.
+
+String 100..2 is not a number.
+

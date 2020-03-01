@@ -1,0 +1,79 @@
+dataStructure that holds all class details
+array of type dataStructure that holds all classes 
+
+int main(void){
+	getClasses()
+	promptUser()
+	return 0;
+}
+
+void getClasses(){
+	parses each line and populates data structure with class data until EOF
+	uses a for loop for each line in a file
+		parseLine(index)
+}
+
+void parseLine(int lineNumber){
+	gets all data by line and stores in data structure until EOL
+	uses strtok
+	fills dataStructure when all data is gathered
+}
+
+void promptUser(){
+	switch statement in a while loop that calls proper prints by case
+	while(statement){
+		switch(printOptions());
+		case 1 
+			sorts and prints by classs number
+			printNumber()
+		case 2
+			sorts and prints by days of the week
+			printDays()
+		case 3
+			sorts and prints by time of days
+			printTime()
+		case 4
+			sorts and prints by class level
+			printLevel()
+		case 5
+			error and quit
+			statement = false
+}
+
+void printOptions(){
+	asks user for option and gets input
+	if input is not 1,2,3,4,5 the input = 5
+	return input;
+}
+
+void printOneClass(Class class){
+	prints one class all details to terminal
+	write one class all details to file	
+}
+
+void printNumber(){
+	sorts by class number
+	printOneClass(class) - for loop
+	end line in file and terminal
+}
+
+void printDays(){
+	prompt user for specific set of days
+	search data structure and compile
+	printOneClass(class) - for loop
+	end line in file and terminal
+}
+
+void printTime(){
+	prompt user for days and time
+	search for classes at given time of day - for loop
+	printOneClass(class) - for loop
+	end line in file and terminal
+}
+
+void printLevel(){
+	prompt user for class level string
+	search for class level - for loop
+	printOneClass(class) - for loop
+	end line in file and terminal
+}

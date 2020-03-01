@@ -1,0 +1,47 @@
+Week 11
+Section 11.1
+1. Go through slides 1-5
+2. Show how to redirect input and show how to redirect output using strings.c
+showing how to type in and use file doing same thing
+3. Add stderr to strings.c and show how to redirect stderr
+By default the stdout and stderr are together routed to your console. 
+However you can redirect the error
+stream to a file with the help of the following form of your command 
+line: ./strings 2>logfile.log. 
+In that case the stdout will still come to the console, but stderr will 
+go to the file.
+4. To route to 2 different files for output:
+./strings 1> out.txt 2>err.txt
+5. print each character from the keyboard (maybe a redirected file).  
+Show eof from keyboard through ctrl-d
+showchars.c with 7 chars
+newline is 10, EOF is -1, null is 0, scanf returns number of items read
+6. show slide 13 and show printtest.c to show different formatting
+7. show slides 6 -8 on file pointera and 11-15
+8. Use sort_chars_file.c to show use of file pointers and fopen, fclose, 
+fscanf and fprintf
+9. show table 11.4, pg 636 to show functions for stdin/out and files
+9. Show the different options for fopen
+www.tutorialspoint.com/c_standard_library/c_function_fopen.htm
+10. show error you get if file does not exist when you call fopen with r
+sort_chars_file1.c
+11. show how to loop on getting a filename to open - sort_chars_file2.c
+12. moving the file pointer in the file.  sort_chars_file3.c moves back to 
+beginning of input file after reading 6 characters.  Will duplicate f k s j p a
+
+Section 11.2
+13. binary files
+Some files can be very large.  To read them in and print them, 
+your program has expend alot of effort to convert it to binary then
+convert it back to ints, etc to print them.  
+If there is no need for us to have to read these files, then we can
+make them binary files.  then we don't have to do this translation.
+show tfile1.c and bfile1.c to show how this works.
+and show them tfile2.c and bfile2.c and show different sizes. Using binary
+files has the disadvantage of increasing the file size.  You can do a 
+compression on the file for storage, which you can't do for text files.
+Another disadvantage - can't be read by a human, is not portable. 
+Show the definition of fwrite.
+14. bfile3.c and bfile4.c Show how to read from a file. 
+15. bfile5.c - show program of reading our class.txt then writing it to a binary
+file then reading it and printing from the binary file 

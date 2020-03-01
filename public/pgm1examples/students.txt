@@ -1,0 +1,5 @@
+john doe $15 126 r
+mary smith $32 100 j
+blake johnson $12 30 s
+andrew tate $40 15 f
+jerry stone $5 30 s
